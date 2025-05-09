@@ -10,7 +10,7 @@ ISR(INT0_vect){
         canal=1;
     else
         canal=2;
-    ADMUX=(1<<REFS0)|(1<<ADLAR)|canal;
+    ADMUX=(1<<REFS0)|(1<<ADLAR)|(canal);
 }
 
 int main(void){
